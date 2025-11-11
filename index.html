@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts - ZXC Club</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js" defer></script>
+  <script src="popup.js" defer></script>
+</head>
+<body class="bg-dark text-white">
+  <div id="scrollProgressBar"></div>
+
+<header class="topbar d-flex align-items-center px-3">
+  <a href="index.html" class="logo me-3">
+    <img src="img/logoo.jpg" alt="ZXC Club Logo">
+  </a>
+  
+  <h1 class="m-0"></h1>
+  
+  <div class="search-box ms-auto d-flex align-items-center gap-2">
+    <input type="text" class="form-control form-control-sm" placeholder="Search...">
+    <button class="btn btn-info btn-sm"><i class='bx bx-search'></i></button>
+    <button id="colorBtn" class="btn btn-primary ms-2" title="Change Background">
+      <i class='bx bx-brush'></i>
+    </button>
+  </div>
+  
+  <a href="login.html" class="user-icon ms-3"><i class='bx bxs-user'></i></a>  
+</header>
+
+<nav class="sidebar">
+  <ul>
+    <li><a href="index.html"><i class='bx bx-home'></i> Home</a></li>
+    <li><a href="gamezones.html"><i class='bx bx-joystick'></i> Game<br>Zones</a></li>
+    <li><a href="price.html"><i class='bx bx-drink'></i> Snacks and Drinks</a></li>
+    <li><a href="games.html"><i class='bx bx-game'></i> Games</a></li>
+    <li><a href="contacts.html"><i class='bx bx-phone'></i> Contacts</a></li>
+    <li><a href="login.html"><i class='bx bx-user-circle'></i> Login/Register</a></li>
+    <li><a href="FAQ.html"><i class='bx bx-question-mark'></i> FAQ</a></li>
+  </ul>
+</nav>
+
+<main class="content container mt-4">
+  <h2 class="text-center mb-3">Welcome to ZXC Club</h2>
+  <p class="text-center text-white mb-5">Your cyber club with the best game zones, snacks, and games!</p>
+
+  <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/stroom.jpg" class="d-block w-100" alt="Game Zones" style="max-height:400px; object-fit:cover;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Game Zones</h5>
+          <p>Choose the perfect game zone.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/sss.png" class="d-block w-100" alt="Snacks and Drinks" style="max-height:400px; object-fit:cover;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Snacks and Drinks</h5>
+          <p>Menu of snacks and drinks for players.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/steam.jpg" class="d-block w-100" alt="Games" style="max-height:400px; object-fit:cover;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Games</h5>
+          <p>All available games and tournaments.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <a href="gamezones.html" class="text-decoration-none">
+        <div class="card h-100 bg-dark text-light border-info">
+          <img src="img/stroom.jpg" class="card-img-top" alt="Game Zones">
+          <div class="card-body">
+            <h5 class="card-title text-info">Game Zones</h5>
+            <p class="card-text">Choose the perfect game zone.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <a href="price.html" class="text-decoration-none">
+        <div class="card h-100 bg-dark text-light border-info">
+          <img src="img/sss.png" class="card-img-top" alt="Snacks and Drinks">
+          <div class="card-body">
+            <h5 class="card-title text-info">Snacks and Drinks</h5>
+            <p class="card-text">Menu of snacks and drinks for players.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <a href="games.html" class="text-decoration-none">
+        <div class="card h-100 bg-dark text-light border-info">
+          <img src="img/steam.jpg" class="card-img-top" alt="Games">
+          <div class="card-body">
+            <h5 class="card-title text-info">Games</h5>
+            <p class="card-text">All available games and tournaments.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <a href="contacts.html" class="text-decoration-none">
+        <div class="card h-100 bg-dark text-light border-info">
+          <img src="img/contacts.png" class="card-img-top" alt="Contacts">
+          <div class="card-body">
+            <h5 class="card-title text-info">Contacts</h5>
+            <p class="card-text">Get in touch or find the club address.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <a href="login.html" class="text-decoration-none">
+        <div class="card h-100 bg-dark text-light border-info">
+          <img src="img/login.png" class="card-img-top" alt="Login">
+          <div class="card-body">
+            <h5 class="card-title text-info">Login</h5>
+            <p class="card-text">Access your player account.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 ZXC Club. All rights reserved.<div id="dateTime"></div></p>
+  <p id="scoreDisplay">Guest's score: 0</p>
+  <div id="fontDisplay" class="text-info mb-2"></div>
+  <p id="extraText" style="display:none;">
+    This is additional text that appears on click.
+  </p>
+  <button id="readMoreBtn">Read more</button>
+  <div class="stats-section text-center my-5">
+    <h3 class="stat-number" data-target="1500">0</h3>
+    <p>Players</p>
+  </div>
+  <button id="prankBtn" class="btn btn-danger">Do not click</button>
+  <div id="weather" class="text-center my-4">
+    <h3>Weather in Astana:</h3>
+    <p id="weather-info">Loading...</p>
+  </div>
+</footer>
+
+<script src="popup.js"></script>
+<script src="java.script/background.js"></script>
+<script src="java.script/datetime.js"></script>
+<script src="java.script/script.js"></script>
+</body>
+</html>
